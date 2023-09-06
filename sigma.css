@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --sigma-font:#eb5534;
+    --primary-color: #075f34;
+    --primary-edited-color: #0c894c;
+    --secondary-color: #963621;
+
+}
+body{
+    background-color: rgb(170, 165, 165);
+}
+
+.top{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--sigma-font);
+    color: white;
+    padding: 0;
+}
+.top button{
+    margin-left: 14vw;
+    margin-top: 1vh;
+    width: 12vw;
+    height: 6vh;
+    color: white;
+    background-color: var(--primary-edited-color);
+    font-size: large;
+    cursor: pointer;
+}
+
+nav{
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+nav img{
+    width: 15vw;
+    height: 15vh;
+    padding-left: 12vw;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    padding-right: 10vw;
+    padding-top: 6vh;
+    font-size: larger;
+    font-weight: bold;
+}
+nav ul li:hover{
+    cursor: pointer;
+    color: var(--sigma-font);
+}
+nav ul li svg{
+    transform: scale(1.5);
+}
+
+.swiper{
+    background-color: var(--sigma-font);
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5vh;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide {
+    width: 25%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual {
+    position: absolute;
+    left: 0;
+    bottom: 20vh;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--sigma-font);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+
+}
+
+
+.bodyOne{
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    height: 40vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+.bodyOne img{
+    position: absolute;
+    right: 5vw;
+    height: 50vh;
+    top: -5vh;
+    border-radius: 10px;
+}
+.bodyOne p{
+    text-align: center;
+    color: black;
+    height: 100%;
+    width: 40vw;
+    padding-top: 15vh;
+    padding-left: 5vw;
+    font-size: x-large;
+}
+
+
+.bodyTwo{
+    /* position: relative; */
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background-color: white;
+    color: white;
+    margin-bottom: 10vh;
+}
+.bodyTwo .One{
+    display: flex;
+    padding-top: 0;
+}
+.bodyTwo .One div{
+    width: 25%;
+    height: 20vh;
+    background-color: var(--primary-color);
+}
+.bodyTwo .One div:hover{
+    background-color: var(--primary-edited-color);
+    cursor: pointer;
+}
+.bodyTwo .One div:not(:last-child){
+    margin-right: 10px;
+}
+.bodyTwo .One div p{
+    padding-top: 15vh;
+    font-size: x-large;
+    padding-left: 1vw;
+}
+.bodyTwo .Two{
+    display: flex;
+    justify-content: space-between ;
+}
+.bodyTwo .Two p{
+    text-align: center;
+    color: black;
+    height: 100%;
+    width: 40vw;
+    padding-top: 15vh;
+    padding-left: 5vw;
+    font-size: x-large;
+}
+.bodyTwo .Two img{
+    height: 40vh;
+    margin-top: 2vw;
+    padding-right: 10vw;
+}
+
+
+
+
+footer{
+    background-color: var(--sigma-font);
+    height: 5vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+footer ul{
+    bottom: 0;
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+
+}
+footer ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
