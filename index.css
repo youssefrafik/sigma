@@ -4,14 +4,14 @@
 }
 
 :root{
-    --sigma-font:#eb5534;
+    --sigma-font:#de0d26;
     --primary-color: #075f34;
     --primary-edited-color: #0c894c;
     --secondary-color: #963621;
 
 }
 body{
-    background-color: rgb(170, 165, 165);
+    background-color: white;
 }
 
 .top{
@@ -27,7 +27,7 @@ body{
     width: 12vw;
     height: 6vh;
     color: white;
-    background-color: var(--primary-edited-color);
+    background-color: rgb(101, 101, 101);
     font-size: large;
     cursor: pointer;
 }
@@ -62,17 +62,22 @@ nav ul li svg{
     transform: scale(1.5);
 }
 
+.border{
+    background-color: #de0d26;
+    height: 1vh;
+    width: 100%;
+}
+
 .swiper{
-    background-color: var(--sigma-font);
     width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: .5vh;
+    padding-top: 20vh;
 }
 .slider{
-    width: 100%;
+    width: 80%;
     height: 100%;
     overflow: hidden;
 }
@@ -98,7 +103,7 @@ nav ul li svg{
 .navigation-manual {
     position: absolute;
     left: 0;
-    bottom: 20vh;
+    bottom: 0;
     text-align: center;
     width: 100%;
     display: flex;
@@ -146,7 +151,7 @@ nav ul li svg{
 .bodyOne{
     position: relative;
     display: flex;
-    background-color: white;
+    background-color: rgb(172, 172, 172);
     margin-top: 20vh;
     margin-bottom: 20vh;
     height: 40vh;
@@ -162,7 +167,7 @@ nav ul li svg{
 }
 .bodyOne p{
     text-align: center;
-    color: black;
+    color: white;
     height: 100%;
     width: 40vw;
     padding-top: 15vh;
@@ -189,10 +194,10 @@ nav ul li svg{
 .bodyTwo .One div{
     width: 25%;
     height: 20vh;
-    background-color: var(--primary-color);
+    background-color: rgb(172, 172, 172);
 }
 .bodyTwo .One div:hover{
-    background-color: var(--primary-edited-color);
+    background-color: var(--sigma-font);
     cursor: pointer;
 }
 .bodyTwo .One div:not(:last-child){
@@ -201,7 +206,8 @@ nav ul li svg{
 .bodyTwo .One div p{
     padding-top: 15vh;
     font-size: x-large;
-    padding-left: 1vw;
+    text-align: center;
+    /* padding-left: 1vw; */
 }
 .bodyTwo .Two{
     display: flex;
@@ -227,7 +233,7 @@ nav ul li svg{
 
 footer{
     background-color: var(--sigma-font);
-    height: 5vh;
+    height: 6vh;
     color: white;
     display: flex;
     justify-content: space-between;
